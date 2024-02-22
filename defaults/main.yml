@@ -5,7 +5,7 @@
 # jenkins_pkg_url: "https://www.example.com"
 
 # Change this to `latest` to update Jenkins if a newer version is available.
-jenkins_package_state: present
+jenkins_package_state: latest
 
 jenkins_prefer_lts: false
 
@@ -15,7 +15,7 @@ jenkins_home: /var/lib/jenkins
 jenkins_hostname: localhost
 jenkins_http_port: 8080
 jenkins_jar_location: /opt/jenkins-cli.jar
-jenkins_url_prefix: ""
+jenkins_url_prefix: "jenkins4.twig-world.com"
 jenkins_options: ""
 jenkins_java_options: "-Djenkins.install.runSetupWizard=false"
 
@@ -250,7 +250,7 @@ jenkins_init_changes:
 
 
 # If Jenkins is behind a proxy, configure this.
-jenkins_proxy_host: ""
+jenkins_proxy_host: "jenkins4.twig-world.com"
 jenkins_proxy_port: ""
 jenkins_proxy_noproxy:
   - "127.0.0.1"
